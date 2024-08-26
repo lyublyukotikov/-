@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./normalize/normalize.css" />
+    <title>Кабинет администратора</title>
+  </head>
+  <body>
+    <script src="./java-script/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <header class="header">
+      <div class="header__container container">
+        <a class="header__logo" href="/">
+          <img
+            class="header__logo-image"
+            src="./image/header-logo.svg"
+            alt="Кабинет администратора"
+          />
+        </a>
+        <nav class="header__nav">
+          <div class="header__text-block">
+            <div class="header__text">Раскольников Д.С.</div>
+            <span class="header__description">Менеджер организации</span>
+          </div>
+          <a class="header__menu-logo" href="/">
+            <img
+              class="header__menu-logo-image"
+              src="./image/menu-arrow.svg"
+              alt="Меню"
+            />
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main class="content">
+      <div class="horizontal-layout container">
+        <section class="section section--menu">
+          <div class="section__body">
+            <!-- Карточка компании -->
+            <div class="card">
+              <div class="card__body">
+                <img
+                  src="./image/logo-company.svg"
+                  alt="Иконка компании"
+                  class="card__image"
+                  width="40"
+                  height="42"
+                />
+                <div class="card__bottom">
+                  <div class="card__bottom-group">
+                    <h5 class="card__title">Кедр, ООО</h5>
+                    <p class="card__inn">ИНН 1195783402</p>
+                  </div>
+                  <a href="#" class="card__link">Реквизиты и настройки</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Меню организаций -->
+            <div class="organizations">
+              <nav class="organizations__menu">
+                <div class="organizations__menu-title">
+                  <img
+                    src="./image/organizations.svg"
+                    alt="Организации"
+                    class="organizations__image"
+                    width="22"
+                    height="22"
+                  />
+                  Организация
+                </div>
+                <ul class="organizations__menu-list">
+                  <li class="organizations__menu-item">
+                    <a href="/" class="organizations__menu-link"
+                      >Направления обмена</a
+                    >
+                  </li>
+                  <li class="organizations__menu-item">
+                    <a href="/" class="organizations__menu-link">
+                      Пользователи
+                      <span class="organizations__additional-text"
+                        >100/100</span
+                      >
+                    </a>
+                  </li>
+                  <li class="organizations__menu-item">
+                    <a href="/" class="organizations__menu-link">Сертификаты</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <!-- Меню каталогов -->
+            <div class="catalogs">
+              <nav class="catalogs__menu">
+                <div class="catalogs__menu-title">
+                  <img
+                    src="./image/catalogs.svg"
+                    alt="Каталоги"
+                    class="catalogs__image"
+                    width="22"
+                    height="22"
+                  />
+                  Каталоги
+                </div>
+                <ul class="catalogs__menu-list">
+                  <li class="catalogs__menu-item">
+                    <a href="/" class="catalogs__menu-link">Сотрудники</a>
+                  </li>
+                  <li class="catalogs__menu-item">
+                    <a href="/" class="catalogs__menu-link">
+                      Представляемые лица
+                      <span class="catalogs__additional-text">8/10</span>
+                    </a>
+                  </li>
+                  <li class="catalogs__menu-item">
+                    <a href="/" class="catalogs__menu-link">Доверенности</a>
+                  </li>
+                  <li class="catalogs__menu-item">
+                    <a href="/" class="catalogs__menu-link">Классификаторы</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </section>
+        <section class="section__edit">
+          <!-- вся правая  часть -->
+          <div class="section__body--edit">
+            <div class="edit-user d-flex align-items-center gap-3">
+              <a
+                class="edit-user__link d-flex justify-content-center align-items-center"
+                href="#"
+              >
+                <span
+                  class="edit-user__link-icon-wrapper d-flex justify-content-center align-items-center"
+                >
+                  <svg
+                    width="11"
+                    height="20"
+                    viewBox="0 0 11 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.27026 1.8988L1.1691 9.99997L9.27026 18.1011"
+                      stroke="#8B77EF"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+              </a>
+              <h1 class="edit-user__title m-0">Редактирование пользователя</h1>
+            </div>
+            <form action class="data__form">
+              <div class="adding__form">
+                <h3 class="data__form__title">Данные</h3>
+                <div class="data-form__body">
+                  <div class="data-form__user-email">
+                    <div class="data-form__field">
+                      <label for="email" class="data-form__field-label">
+                        Эл. почта<span class="required">*</span>
+                      </label>
+                      <input
+                        type="email"
+                        placeholder="konstantinko@yandex.ru"
+                        id="email"
+                        class="data-form__input"
+                      />
+                    </div>
+                  </div>
+                  <div class="data-form__user-data">
+                    <div class="data-form__field">
+                      <label for="surname" class="data-form__field-label"
+                        >Фамилия</label
+                      >
+                      <input
+                        placeholder="Константинов"
+                        id="surname"
+                        class="data-form__input data-form__input--disabled"
+                        disabled
+                      />
+                    </div>
+                    <div class="data-form__field">
+                      <label for="name" class="data-form__field-label"
+                        >Имя</label
+                      >
+                      <input
+                        placeholder="Константин"
+                        id="name"
+                        class="data-form__input data-form__input--disabled"
+                        disabled
+                      />
+                    </div>
+                    <div class="data-form__field">
+                      <label for="patronymic" class="data-form__field-label"
+                        >Отчество</label
+                      >
+                      <input
+                        placeholder="Иванович"
+                        id="patronymic"
+                        class="data-form__input"
+                      />
+                    </div>
+                  </div>
+                  <div class="data-form__user-role">
+                    <div class="data-form__field">
+                      <label for="role" class="data-form__field-label"
+                        >Роль</label
+                      >
+                      <div class="dropdown">
+                        <button
+                          class="dropdown-menu-button"
+                          type="button"
+                          id="dropdownMenuButton"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Менеджер организации
+                        </button>
+                        <ul
+                          class="dropdown-menu"
+                          aria-labelledby="dropdownMenuButton"
+                        >
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Менеджер организации</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >example1@email.com</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item highlight-option" href="#"
+                              >example2@email.com</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="switch">
+                    <label class="switch__label">
+                      <input type="checkbox" class="switch__input" />
+                      <span class="switch__slider switch__slider--round"></span>
+                    </label>
+                    <div class="switch__body">
+                      Групповой доступ для направлений
+                      <div class="tooltip-container">
+                        <svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="#BCB5FF"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="switch__icon"
+                        >
+                          <g clip-path="url(#clip0_416_1751)">
+                            <path
+                              d="M16 8C16 10.1217 15.1571 12.1566 13.6569 13.6569C12.1566 15.1571 10.1217 16 8 16C5.87827 16 3.84344 15.1571 2.34315 13.6569C0.842855 12.1566 0 10.1217 0 8C0 5.87827 0.842855 3.84344 2.34315 2.34315C3.84344 0.842855 5.87827 0 8 0C10.1217 0 12.1566 0.842855 13.6569 2.34315C15.1571 3.84344 16 5.87827 16 8ZM5.496 6.033H6.321C6.459 6.033 6.569 5.92 6.587 5.783C6.677 5.127 7.127 4.649 7.929 4.649C8.615 4.649 9.243 4.992 9.243 5.817C9.243 6.452 8.869 6.744 8.278 7.188C7.605 7.677 7.072 8.248 7.11 9.175L7.113 9.392C7.11405 9.45761 7.14085 9.52017 7.18762 9.5662C7.23439 9.61222 7.29738 9.63801 7.363 9.638H8.174C8.2403 9.638 8.30389 9.61166 8.35078 9.56478C8.39766 9.51789 8.424 9.4543 8.424 9.388V9.283C8.424 8.565 8.697 8.356 9.434 7.797C10.043 7.334 10.678 6.82 10.678 5.741C10.678 4.23 9.402 3.5 8.005 3.5C6.738 3.5 5.35 4.09 5.255 5.786C5.25363 5.81829 5.25888 5.85053 5.27043 5.88072C5.28198 5.91091 5.29958 5.93841 5.32216 5.96155C5.34473 5.98468 5.3718 6.00296 5.40169 6.01524C5.43159 6.02753 5.46368 6.03357 5.496 6.033ZM7.821 12.476C8.431 12.476 8.85 12.082 8.85 11.549C8.85 10.997 8.43 10.609 7.821 10.609C7.237 10.609 6.812 10.997 6.812 11.549C6.812 12.082 7.237 12.476 7.822 12.476H7.821Z"
+                              fill="#BCB5FF"
+                            />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_416_1751">
+                              <rect width="16" height="16" fill="white" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                        <div class="tooltip-text">
+                          Позволяет разделять доступ к разделам внутри
+                          направлений
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="request-form">
+                  <h2 class="request-form__title">Запрос по КБК</h2>
+                  <div class="request-form__body">
+                    <div class="request-form__button-container">
+                      <button class="request-form__button">По всем</button>
+                      <button class="request-form__button">
+                        По нескольким
+                      </button>
+                      <button class="request-form__button">
+                        Не запрашивать
+                      </button>
+                    </div>
+                    <div class="request-form__description">
+                      Письмо не будет содержать запрос отчетов по указанной
+                      организации
+                    </div>
+                  </div>
+                </div>
+                <div class="directions-form">
+                  <h3 class="directions-form__title">
+                    Направления обмена организации
+                  </h3>
+                  <div class="directions-form__body">
+                    <div class="directions-form__search search">
+                      <button class="search__button">
+                        <img
+                          class="search__icon"
+                          src="./image/icon-search.svg"
+                          alt="Поиск по Идентификатору направления"
+                        />
+                      </button>
+                      <input
+                        id="search-input"
+                        class="search__input"
+                        type="text"
+                        placeholder="Идентификатор направления"
+                      />
+                    </div>
+                    <button class="directions-form__button">
+                      Активировать все
+                    </button>
+                  </div>
+                </div>
+
+                <div class="card__directions">
+                  <div class="item-list">
+                    <div class="item">
+                      <input type="checkbox" id="checkbox1" />
+                      <label for="checkbox1">
+                        <span class="item-title"
+                          ><strong>ФНС</strong> 2AC-1001232430-22</span
+                        >
+                        <div class="item-details">
+                          <table>
+                            <tr>
+                              <th>Код НО</th>
+                              <td><strong>12424</strong></td>
+                            </tr>
+                            <tr>
+                              <th>ИНН</th>
+                              <td><strong>2141245921395</strong></td>
+                            </tr>
+                            <tr>
+                              <th>Действует</th>
+                              <td>
+                                <strong>12 июня 2023 — 12 июня 2024</strong>
+                              </td>
+                            </tr>
+                          </table>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="item">
+                      <input type="checkbox" id="checkbox2" />
+                      <label for="checkbox2">
+                        <span class="item-title"
+                          ><strong>ПФР</strong> 2AD-1001232430-24</span
+                        >
+                        <div class="item-details">
+                          <table>
+                            <tr>
+                              <th>Код НО</th>
+                              <td><strong>12424</strong></td>
+                            </tr>
+                            <tr>
+                              <th>ИНН</th>
+                              <td><strong>2141245921395</strong></td>
+                            </tr>
+                            <tr>
+                              <th>Действует</th>
+                              <td>
+                                <strong>12 июня 2023 — 12 июня 2024</strong>
+                              </td>
+                            </tr>
+                          </table>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="item">
+                      <input type="checkbox" id="checkbox3" />
+                      <label for="checkbox3">
+                        <span class="item-title"
+                          ><strong>ФНС</strong> 2AR-1001232430-27</span
+                        >
+                        <div class="item-details">
+                          <table>
+                            <tr>
+                              <th>Код НО</th>
+                              <td><strong>12424</strong></td>
+                            </tr>
+                            <tr>
+                              <th>ИНН</th>
+                              <td><strong>2141245921395</strong></td>
+                            </tr>
+                            <tr>
+                              <th>Действует</th>
+                              <td>
+                                <strong>12 июня 2023 — 12 июня 2024</strong>
+                              </td>
+                            </tr>
+                          </table>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="item">
+                      <input type="checkbox" id="checkbox4" />
+                      <label for="checkbox4">
+                        <span class="item-title"
+                          ><strong>ПФР</strong> 2AD-1001232430-25</span
+                        >
+                        <div class="item-details">
+                          <table>
+                            <tr>
+                              <th>Код НО</th>
+                              <td><strong>12424</strong></td>
+                            </tr>
+                            <tr>
+                              <th>ИНН</th>
+                              <td><strong>2141245921395</strong></td>
+                            </tr>
+                            <tr>
+                              <th>Действует</th>
+                              <td>
+                                <strong>12 июня 2023 — 12 июня 2024</strong>
+                              </td>
+                            </tr>
+                          </table>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="add-cancel-buttons">
+                  <button class="add-button">Добавить</button>
+                  <button class="cancel-button">Отменить добавление</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
+      </div>
+      <footer class="footer container">
+        <div class="footer__main">
+          <p>&copy; 2024 - КОМИТА ОТЧЁТ Онлайн</p>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
