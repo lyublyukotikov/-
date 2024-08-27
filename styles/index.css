@@ -1049,7 +1049,15 @@ p {
   border: none;
   color: var(--color-dark); /* Ensure --color-dark is defined */
 }
+@media (max-width: 575px) {
+  .search__input {
+    padding-left:5px;
+  }
 
+  
+
+
+}
 /* Search Button */
 .search__button {
   background-color: transparent;
@@ -1417,5 +1425,19 @@ input[type="checkbox"]:disabled:checked::before {
 }
 
 .footer__main {
-  padding: 19px 0px 6px 0px;
+  
+  padding: 32px 0px 6px 0px;
+  font-size:12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #00000085;
+}
+@media (max-width: 575px) {
+  .footer__main {
+    font-size:11px;
+  }
+
+  
+
+
 }
