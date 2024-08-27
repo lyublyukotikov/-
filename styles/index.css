@@ -195,6 +195,24 @@ p {
   height: auto; /* Автоматическая высота для сохранения пропорций */
 }
 
+/* Адаптивные стили для экранов шириной до 480px (очень маленькие экраны) */
+@media (max-width: 480px) {
+
+
+  .header__text {
+    font-size: 10px;
+  }
+
+  .header__description {
+    font-size: 8px;
+    
+  }
+
+  .header__menu-logo {
+    width: 12px; /* Уменьшаем размер иконки меню */
+  }
+ 
+}
 /* Общие стили для секции меню */
 .section--menu {
   width: 100%;
@@ -512,6 +530,7 @@ p {
     width: 5px;
     height: 14px;
   }
+
 }
 
 /* Section Edit */
@@ -976,6 +995,17 @@ p {
   line-height: 26px;
   font-size: 18px;
 }
+@media (max-width: 575px) {
+  .request-form__description {
+    font-size: 14px; /* Уменьшение размера шрифта до 12px для экранов шириной до 575px */
+  }
+  .switch__body{
+    font-size: 14px;
+  }
+}
+
+
+
 
 /* Directions Form Title */
 .directions-form__title {
